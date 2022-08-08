@@ -10,7 +10,7 @@
         <span class="text-yellow-500 opacity-85"> Explore</span> Your World
       </h1>
     </div>
-    <div class="absolute right-48">
+    <div class="absolute right-36 bottom-6 ">
 <img src="../assets/images/beach-removebg-preview.png" alt="travel-palm-image" class=" h-96 w-96">
     </div>
     </div>
