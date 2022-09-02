@@ -1,4 +1,5 @@
 <template>
+  <div>
   <div class="home px-20">
     <NavBar />
     <div class="relative">
@@ -29,9 +30,11 @@
        <div class="my-24">
         <Sports />
        </div>
-    </div>
-   
+    </div> 
   </div>
+  <OurServices />
+  <Footer />
+</div>
 </template>
 
 <script>
@@ -40,7 +43,8 @@ import HelloWorld from "@/components/HelloWorld.vue";
 import NavBar from "@/components/layout/Navbar.vue";
 import Sports from "@/components/layout/Sports.vue";
 import Button from "@/components/Button.vue";
-
+import Footer from "../components/layout/Footer.vue";
+import OurServices from "../components/layout/OurServices.vue";
 export default {
   name: "Home",
   components: {
@@ -48,6 +52,8 @@ export default {
     NavBar,
     Button,
     Sports,
+    Footer,
+    OurServices,
   },
 };
 </script>
