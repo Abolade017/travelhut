@@ -5,13 +5,15 @@ import store from './store';
 import '@/assets/css/tailwind.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { faFacebook, faFacebookF, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faInstagram, faTwitter, } from '@fortawesome/free-brands-svg-icons';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 
-library.add(faInstagram);
-library.add(faFacebookF);
-library.add(faTwitter);
-const app=createApp(App);
+
+library.add(faInstagram, faFacebookF, faTwitter, faTwitter, faStar);
+
+
+const app = createApp(App);
 app.use(store);
 app.use(router);
 app.mount('#app');
