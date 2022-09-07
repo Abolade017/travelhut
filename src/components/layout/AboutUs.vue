@@ -2,7 +2,7 @@
   <div class="">
     <div class="pb-20">
       <h1 class="text-center font-bold text-4xl pt-6 pb-20">About Us</h1>
-      <div class="flex justify-between">
+      <div class="flex justify-between space-x-10">
         <div>
           <h1 class="text-3xl font-bold capitalize pb-6">
             it's a big world out <br />there, go explore
