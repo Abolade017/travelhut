@@ -51,14 +51,15 @@
   </div>
 </template>
 <script>
+  // import { mapState } from 'vuex';
 export default {
   data() {
     return {
-      travelHut: [
-        { id: 1, text: "fa-brands fa-facebook-f", path: "" },
-        { id: 2, text: "fa-brands fa-twitter", path: "" },
-        { id: 3, text: "fa-brands fa-instagram", path: "" },
-      ],
+      // travelHut: [
+      //   { id: 1, text: "fa-brands fa-facebook-f", path: "" },
+      //   { id: 2, text: "fa-brands fa-twitter", path: "" },
+      //   { id: 3, text: "fa-brands fa-instagram", path: "" },
+      // ],
       about: [
         { id: 1, text: "our story" },
         { id: 1, text: "teams" },
@@ -77,6 +78,11 @@ export default {
       ],
     };
   },
+  computed:{
+  travelHut(){
+    return this.$store.state.travelHut;
+  }
+  }
 };
 </script>
 <style scoped>

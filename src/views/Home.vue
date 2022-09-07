@@ -1,40 +1,49 @@
 <template>
   <div>
-  <div class="home px-20">
-    <NavBar />
-    <div class="relative">
-    <div class="flex items-center px-20">
-      <h1
-        class="capitalize text-6xl font-bold mt-20 text-gray-800 opacity-90"
-        id="explore"
-      >
-        <span class="text-yellow-500 opacity-85"> Explore</span> Your World
-      </h1>
+    <div class="home px-20">
+      <NavBar />
+      <div class="relative">
+        <div class="flex items-center px-20">
+          <h1
+            class="capitalize text-6xl font-bold mt-20 text-gray-800 opacity-90"
+            id="explore"
+          >
+            <span class="text-yellow-500 opacity-85"> Explore</span> Your World
+          </h1>
+        </div>
+        <div class="absolute right-24 top-16">
+          <img
+            src="../assets/images/beach-removebg-preview.png"
+            alt="travel-palm-image"
+            class="h-96 w-96"
+          />
+        </div>
+      </div>
+      <div class="px-20 py-2">
+        <p class="text-lg text-gray-900 opacity-80 capitalize font-semibold">
+          A new way of travel <br />
+          experience
+        </p>
+        <div class="my-24 flex space-x-10 items-center">
+          <Button class="bg-yellow-500 text-white font-bold">join now</Button>
+          <Button class="border-2 border-yellow-500">Watch video</Button>
+        </div>
+        <div>
+          <p class="text-lg text-gray-600">what exiest you most?</p>
+        </div>
+        <div class="my-24">
+          <about-Us>
+            <template v-slot:Sports>
+              <Sports />
+            </template>
+          
+        </about-Us>
+        </div>
+      </div>
     </div>
-    <div class="absolute right-24 top-16 ">
-<img src="../assets/images/beach-removebg-preview.png" alt="travel-palm-image" class=" h-96 w-96">
-    </div>
-    </div>
-    <div class="px-20 py-2">
-      <p class="text-lg text-gray-900 opacity-80 capitalize font-semibold">
-        A new way of travel <br />
-        experience
-      </p>
-      <div class="my-24 flex space-x-10 items-center">
-       <Button class=" bg-yellow-500 text-white font-bold ">join now</Button>
-       <Button class="border-2 border-yellow-500">Watch video</Button>
-       </div>
-       <div>
-        <p class="text-lg text-gray-600 ">what exiest you most?</p>
-       </div>
-       <div class="my-24">
-        <Sports />
-       </div>
-    </div> 
+    <Destination />
+    <Footer />
   </div>
-  <OurServices />
-  <Footer />
-</div>
 </template>
 
 <script>
@@ -44,7 +53,8 @@ import NavBar from "@/components/layout/Navbar.vue";
 import Sports from "@/components/layout/Sports.vue";
 import Button from "@/components/Button.vue";
 import Footer from "../components/layout/Footer.vue";
-import OurServices from "../components/layout/OurServices.vue";
+import Destination from "../components/layout/Destination.vue";
+import AboutUs from "../components/layout/AboutUs.vue";
 export default {
   name: "Home",
   components: {
@@ -53,7 +63,8 @@ export default {
     Button,
     Sports,
     Footer,
-    OurServices,
+    Destination,
+    AboutUs,
   },
 };
 </script>

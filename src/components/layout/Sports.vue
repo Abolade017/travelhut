@@ -1,7 +1,7 @@
 <template>
-    <div class="flex space-x-10 items-center">
+    <div class="flex space-x-10 items-center pt-10">
         <div v-for="sport in sports" :key="sport.id">
-            <img :src="sport.pic" alt="" class="h-8 w-8">
+            <img :src="sport.pic" alt="" class="h-12 w-12">
             <p class="capitalize text-gray-700 pt-2">{{sport.name}}</p>
         </div>
     </div>

@@ -10,7 +10,7 @@
         alt=""
         class="px-3 h-full w-full transition-transform duration-300 transform bg-dark-200 focus:scale-105 hover:scale-105"
         style="height: 300px; border-radius: 25px"
-        @click="this.$router.push({ path: `/our-services/${country.id}` })"
+        @click="this.$router.push({ path: `/destination/${country.id}` })"
       />
       <div class="pl-3 pt-2">
         <p class="text-lg">{{ country.name }}</p>
@@ -38,12 +38,23 @@
           </svg>
         </div>
       </div>
+      <div class="pt-2">
+        <DetailButton
+          @show-details="
+            this.$router.push({ path: `/destination/${country.id}` })
+          "
+        />
+      </div>
     </div>
   </div>
 </template>
 <script>
 import { mapGetters } from "vuex";
+import DetailButton from "./DetailButton.vue";
 export default {
+  components: {
+    DetailButton,
+  },
   props: ["location", "rate"],
   data() {
     return {};
@@ -53,6 +64,9 @@ export default {
   },
   computed: {
     ...mapGetters(["countryList"]),
+  },
+  methods: {
+   
   },
 };
 </script>

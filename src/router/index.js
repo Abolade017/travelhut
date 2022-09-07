@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../views/Home.vue';
 import Contact from '../views/Contact.vue';
-import OurServices from '../views/OurServices.vue';
+import Destination from '../views/Destination.vue';
 import Location from '../views/Location.vue';
 import NotFound from '../views/NotFound.vue';
 
@@ -20,13 +20,13 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
-    path: '/our-services',
-    name: 'services',
-    component: OurServices
+    path: '/destination',
+    name: 'destination',
+    component: Destination
   },
   {
-    path: '/our-services/:id',
-    name: 'service',
+    path: '/destination/:id',
+    name: 'destination_id',
     component: Location
   },
   {
