@@ -11,8 +11,8 @@
           <OurTeam />
         </div>
         <div>
-          <p class="text-xl">
-            <span class="text-2xl font-bold text-yellow-500"> TravelHut</span>,
+          <p class="">
+            <span class="text-xl font-bold text-yellow-500"> TravelHut</span>,
             a travelling and touring firm that provides satisfactory <br />
             and comfortable services for you. we make sure that our utmost
             priority is to make <br />
