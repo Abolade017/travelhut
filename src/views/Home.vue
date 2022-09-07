@@ -25,7 +25,29 @@
           experience
         </p>
         <div class="my-24 flex space-x-10 items-center">
-          <Button class="bg-yellow-500 text-white font-bold">join now</Button>
+          <Button
+            class="bg-yellow-500 text-white font-bold"
+            @join="isModalboxVisible = true"
+            >join now</Button
+          >
+          <modal-box
+            v-show="isModalboxVisible"
+            @close="isModalboxVisible = false"
+          >
+            <template v-slot:body>
+              <SubscriberForm />
+       
+         
+         
+          
+       
+            </template>
+            <template v-slot:footer>
+              <div class="mt-4 absolute bottom-10 left-10 right-10">
+                
+              </div>
+            </template>
+          </modal-box>
           <Button class="border-2 border-yellow-500">Watch video</Button>
         </div>
         <div>
@@ -36,8 +58,7 @@
             <template v-slot:Sports>
               <Sports />
             </template>
-          
-        </about-Us>
+          </about-Us>
         </div>
       </div>
     </div>
@@ -55,6 +76,8 @@ import Button from "@/components/Button.vue";
 import Footer from "../components/layout/Footer.vue";
 import Destination from "../components/layout/Destination.vue";
 import AboutUs from "../components/layout/AboutUs.vue";
+import ModalBox from "../components/layout/ModalBox.vue";
+import SubscriberForm from "../components/SubscriberForm";
 export default {
   name: "Home",
   components: {
@@ -65,6 +88,13 @@ export default {
     Footer,
     Destination,
     AboutUs,
+    ModalBox,
+    SubscriberForm,
+  },
+  data() {
+    return {
+      isModalboxVisible: false,
+    };
   },
 };
 </script>

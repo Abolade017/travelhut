@@ -12,8 +12,11 @@
         style="height: 300px; border-radius: 25px"
         @click="this.$router.push({ path: `/destination/${country.id}` })"
       />
-      <div class="pl-3 pt-2">
+      <div class="px-3 pt-2">
+        <div class="flex justify-between pb-2">
         <p class="text-lg">{{ country.name }}</p>
+        <p class="text-lg text-yellow-500 font-bold">${{country.price}}</p>
+        </div>
         <div class="flex">
           <font-awesome-icon
             icon="fa-solid fa-star"
