@@ -11,19 +11,19 @@
       novalidate
     >
       <div id="mc_embed_signup_scroll">
-        <div class="mc-field-group flex space-x-10 items-start">
+        <div class="mc-field-group ">
           <div>
             <input
               type="email"
               value=""
               name="EMAIL"
               placeholder="Enter your email"
-              class="required email h-14 rounded-md w-full border pr-6 border-yellow-300 focus:outline-none"
+              class="required email h-14 rounded-md w-full border  border-yellow-300 focus:outline-none"
               id="mce-EMAIL"
               required
             />
           </div>
-          <div class="mb-4">
+          <div class="mb-4 flex justify-center">
             <input
               type="submit"
               value="Subscribe"
