@@ -46,8 +46,8 @@
     background-color: white;
     margin-top: 3%;
     padding: 200px 0;
-    height:600px;
-    width:1000px;
+    height:200px;
+    width:500px;
   }
   .close-img {
     
