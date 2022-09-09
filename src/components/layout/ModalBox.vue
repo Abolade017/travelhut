@@ -45,9 +45,9 @@
     text-align: center;
     background-color: white;
     margin-top: 3%;
-    padding: 200px 0;
-    height:180px;
-    width:400px;
+    padding: 100px 0 150px 0;
+    height:200px;
+    width:500px;
   }
   .close-img {
     

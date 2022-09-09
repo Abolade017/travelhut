@@ -1,30 +1,31 @@
 <template>
   <div>
-    <div class="home px-20">
+    <MobileNavbar/>
+    <div class="home px-4 md:px-20">
       <NavBar />
-      <div class="relative">
-        <div class="flex items-center px-20">
+      <div class="md:relative">
+        <div class="md:flex-row flex flex-col px-0 items-center md:px-20">
           <h1
-            class="capitalize text-6xl font-bold mt-20 text-gray-800 opacity-90"
+            class="capitalize text-4xl md:text-6xl font-bold mt-20 text-gray-800 opacity-90"
             id="explore"
           >
             <span class="text-yellow-500 opacity-85"> Explore</span> Your World
           </h1>
         </div>
-        <div class="absolute right-24 top-16">
+        <div class="absolute md:right-24 md:top-16 bottom-0 ">
           <img
             src="../assets/images/beach-removebg-preview.png"
             alt="travel-palm-image"
-            class="h-96 w-96"
+            class="md:h-96 md:w-96 "
           />
         </div>
       </div>
-      <div class="px-20 py-2">
+      <div class=" px-0 md:px-20 md:py-2 -py-1">
         <p class="text-lg text-gray-900 opacity-80 capitalize font-semibold">
           A new way of travel <br />
           experience
         </p>
-        <div class="my-24 flex space-x-10 items-center">
+        <div class="md:my-24 my-8">
           <Button
             class="bg-yellow-500 text-white font-bold"
             @join="isModalboxVisible = true"
@@ -36,33 +37,29 @@
           >
             <template v-slot:body>
               <SubscriberForm />
-       
-         
-         
-          
-       
             </template>
             <template v-slot:footer>
-              <div class="mt-4 absolute bottom-10 left-10 right-10">
-                
+              <div class="mt-4 absolute bottom-10 left-10 right-10">   
               </div>
             </template>
           </modal-box>
-          <Button class="border-2 border-yellow-500">Watch video</Button>
         </div>
         <div>
-          <p class="text-lg text-gray-600">what exiest you most?</p>
+          <p class="text-lg text-gray-600 md:pt-0 pt-56">what exiest you most?</p>
         </div>
         <div class="my-24">
           <about-Us>
             <template v-slot:Sports>
-              <Sports />
+              <!-- <Sports /> -->
             </template>
           </about-Us>
         </div>
       </div>
     </div>
+    <Services/>
     <Destination />
+    <SubscriberForm/>
+    <CustomersReview />
     <Footer />
   </div>
 </template>
@@ -70,6 +67,7 @@
 <script>
 // @ is an alias to /src
 import HelloWorld from "@/components/HelloWorld.vue";
+import MobileNavbar from "../components/layout/MobileNavbar.vue";
 import NavBar from "@/components/layout/Navbar.vue";
 import Sports from "@/components/layout/Sports.vue";
 import Button from "@/components/Button.vue";
@@ -78,10 +76,13 @@ import Destination from "../components/layout/Destination.vue";
 import AboutUs from "../components/layout/AboutUs.vue";
 import ModalBox from "../components/layout/ModalBox.vue";
 import SubscriberForm from "../components/SubscriberForm";
+import Services from "../components/layout/Services";
+import CustomersReview from "../components/layout/CustomersReview.vue";
 export default {
   name: "Home",
   components: {
     HelloWorld,
+    MobileNavbar,
     NavBar,
     Button,
     Sports,
@@ -90,12 +91,19 @@ export default {
     AboutUs,
     ModalBox,
     SubscriberForm,
+    Services,
+    CustomersReview,
   },
   data() {
     return {
       isModalboxVisible: false,
     };
   },
+  methods:{
+    gotoAboutPage(){
+      return this.$router.push({path:'/about'});
+    }
+  }
 };
 </script>
 <style scoped>

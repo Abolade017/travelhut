@@ -4,6 +4,10 @@ import Contact from '../views/Contact.vue';
 import Destination from '../views/Destination.vue';
 import Location from '../views/Location.vue';
 import NotFound from '../views/NotFound.vue';
+import Login from "../views/Login.vue";
+import SignUp from "../views/SignUp.vue";
+import Services from "../views/Services.vue";
+import pricing from "../views/Pricing.vue";
 
 const routes = [
   {
@@ -24,6 +28,7 @@ const routes = [
     name: 'destination',
     component: Destination
   },
+
   {
     path: '/destination/:id',
     name: 'destination_id',
@@ -33,6 +38,26 @@ const routes = [
     path: '/contact',
     name: 'contact',
     component: Contact
+  },
+  {
+    path: '/services',
+    name: 'services',
+    component: Services
+  },
+  {
+    path: '/pricing',
+    name: 'Pricing',
+    component:pricing
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: Login
+  },
+  {
+    path: '/sign-up',
+    name: 'signup',
+    component: SignUp
   },
   {
     path: '/:pathMatch(.*)*',

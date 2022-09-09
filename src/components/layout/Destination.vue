@@ -1,18 +1,18 @@
 <template>
-  <div class="bg-gray-100 w-full">
-    <div class="py-20">
+  <div class="md:px-0  px-10 w-full">
+    <div class=" py-10 md:py-20">
       <div class="">
-        <div class="-mt-12 pb-4">
-          <h1 class="text-4xl text-yellow-500 font-bold text-center capitalize">
+        <div class=" mt-0 md:-mt-12 pb-4">
+          <h1 class="text-3xl md:text-4xl text-yellow-500 font-bold text-center capitalize">
             explore Top Destination
           </h1>
-          <p class="text-gray-700 text-center py-4 text-lg">
+          <p class="text-gray-700 text-center py-4 text-base md:text-lg">
             We provide top places, cities around the world where you can tour
             and enyoy  together with your family,<br> choose <span class="text-yellow-500 font-bold"> TravelHut</span> today and make your touring dream come true.
           </p>
         </div>
         <div class="">
-          <Services />
+          <DestinationList />
         </div>
       </div>
     </div>
@@ -20,7 +20,7 @@
 </template>
 <script>
 // import { mapGetters } from "vuex";
-import Services from "../Services.vue";
+import DestinationList from "../DestinationList.vue";
 export default {
   data() {
     return {
@@ -28,7 +28,7 @@ export default {
     };
   },
   components: {
-    Services,
+    DestinationList,
   },
   // computed: {
   // ...mapGetters(["countryList"]),
