@@ -2,7 +2,7 @@
   <div class="bg-gray-200">
     <div class="px-20">
         <div class="">
-            <h1 class="text-3xl font-yellow-500 font-bold text-center">Our Services</h1>
+            <!-- <h1 class="text-3xl font-yellow-500 font-bold text-center">Our Services</h1> -->
         </div>
     <!-- <div class="py-20 flex space-x-10">
         <div>
@@ -14,7 +14,9 @@
 </template>
 
 <script>
+  import Destination from '../components/layout/Destination.vue';
 export default {
+  components:{},
   data() {
     return {
         services:[

@@ -58,9 +58,9 @@ form {
   right: 21%;
 }
 @media only screen  and(max-width:600px) {
- f
+
   .mc-field-group{
-    
+    width:240px;
     height: 20px;
   }
   #mc-embedded-subscribe {

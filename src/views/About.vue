@@ -1,7 +1,42 @@
 <template>
   <div class="about">
     <Navbar />
-    <AboutUs class="px-20" />
+    <div class="p-20">
+      <div class="md:flex-row flex-col flex justify-start md:justify-between md:space-x-24 space-x-0">
+        <div>
+          <h1 class="big-world text-xl md:text-2xl font-bold capitalize pb-6">
+            it's a big world out <br />there, go explore
+          </h1>
+          <p>let's plan your destination here, we offer <br> the best destination every week</p>
+
+          <slot name="Sports"></slot>
+          <OurTeam />
+        </div>
+        <div>
+          <p class="">
+            <span class="about text-base md:text-xl font-bold text-yellow-500"> TravelHut</span>,
+            a travelling and touring firm that provides satisfactory <br />
+            and comfortable services for you. we make sure that our utmost
+            priority is to make <br />
+            your dream comes through, we give the best, <br />
+            we provide travelling and touring to great cities <br />
+            around the world we offer different sports like <br />
+            kayaking, camping, surfing, traking, and many more <br />
+            to our touring packages based on your preferences <br />
+            we take care of your safety, because its also <br />
+            our priority to make sure that you are safe. <br />
+            Necessitatibus veritatis atque neque maxime voluptatem ratione sit
+            <br />
+            libero porro consequatur nobis vitae eius fuga sequi dolorum facere
+            <br />
+            autem, nesciunt cum! Doloribus!
+          </p>
+          <div class="pt-6">
+            <Button  class="bg-yellow-500 text-white font-bold h-8 w-24 rounded-md hover:opacity-90">Read More</Button>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="bg-gray-200">
       <h1
         class="package text-3xl font-bold text-yellow-500 text-center pt-8 pb-4"

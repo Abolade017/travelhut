@@ -16,7 +16,7 @@
           >
         </nav>
         <div class="flex space-x-20 pl-20">
-          <router-link
+          <!-- <router-link
             to="/login"
             class="capitalize text-yellow-400 font-bold text-xl"
             >Login</router-link
@@ -25,7 +25,7 @@
             to="/Sign-up"
             class="bg-yellow-500 text-white rounded-md font-bold h-10 w-24 text-center py-1 px-2 text-lg"
             >Sign Up</router-link
-          >
+          > -->
         </div>
       </div>
     </div>

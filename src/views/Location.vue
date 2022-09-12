@@ -3,12 +3,7 @@
     <div class="">
       <Navbar />
       <div>
-        <!-- <p @click="getLocation()">click here...</p>
-        <img :src="location.photo" alt=""> 
-        <div v-for="i in location" :key="i">
-            
-            <img :src="i.image" :alt="i.title" >
-        </div> -->
+        
       </div>
       <Footer />
     </div>
