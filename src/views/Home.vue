@@ -43,7 +43,7 @@
         </modal-box>
       </div>
       <div>
-        <p class="text-lg text-gray-600 md:pt-0 pt-64">what exiest you most?</p>
+        <p class="text-lg text-gray-600 md:pt-0 pt-96">what exiest you most?</p>
       </div>
       <div class="my-24">
         <about-Us>
