@@ -1,21 +1,31 @@
 <template>
   <div class="md:px-0 px-10">
     <div class="pb-20">
-      <h1 class="text-center font-bold text-3xl md:text-4xl pt-6 pb-10 md:pb-20">About Us</h1>
-      <div class="md:flex-row flex-col flex justify-start md:justify-between md:space-x-24 space-x-0">
+      <h1
+        class="text-center font-bold text-3xl md:text-4xl pt-6 pb-10 md:pb-20"
+      >
+        About Us
+      </h1>
+      <div
+        class="md:flex-row flex-col flex justify-start md:justify-between md:space-x-24 space-x-0"
+      >
         <div>
           <h1 class="big-world text-xl md:text-2xl font-bold capitalize pb-6">
             it's a big world out <br />there, go explore
           </h1>
-          <p>let's plan your destination here, we offer <br> the best destination every week</p>
+          <p>
+            let's plan your destination here, we offer <br />
+            the best destination every week
+          </p>
 
           <slot name="Sports"></slot>
           <OurTeam />
         </div>
         <div>
           <p class="">
-            <span class="about text-sm md:text-xl font-bold text-yellow-500"> TravelHut</span>,
-            a travelling and touring firm that provides satisfactory <br />
+            <span class="about text-sm md:text-xl font-bold text-yellow-500">
+              TravelHut</span
+            >, a travelling and touring firm that provides satisfactory <br />
             and comfortable services for you. we make sure that our utmost
             priority is to make <br />
             your dream comes through, we give the best, <br />
@@ -32,19 +42,12 @@
             autem, nesciunt cum! Doloribus!
           </p>
           <div class="pt-6">
-            <Button  class="bg-yellow-500 text-white font-bold w-24 h-10 rounded-md text-center">Read More</Button>
+            <Button
+            @join="$router.push('about')"
+              class="bg-yellow-500 text-white font-bold w-24 h-10 rounded-md text-center"
+              >Read More</Button
+            >
           </div>
-          <!-- <div class=" pt-6">
-            <h1 class="font-bold text-lg text-gray-700">Follow us:</h1>
-            <router-link to="/" class="flex flex-row space-x-6"
-              ><font-awesome-icon
-                :icon="i.text"
-                class="text-2xl text-yellow-500 pt-4 hover:opacity-80"
-                v-for="i in travelHut"
-                :key="i"
-              />
-            </router-link>
-          </div> -->
         </div>
       </div>
     </div>
@@ -54,12 +57,17 @@
 import OurTeam from "../OurTeam.vue";
 import Button from "../Button";
 export default {
-    computed: {
-        travelHut() {
-            return this.$store.state.travelHut;
-        },
+  data(){
+    return {
+      readMore:false
+    }
+  },
+  computed: {
+    travelHut() {
+      return this.$store.state.travelHut;
     },
-    components: { OurTeam, Button }
+  },
+  components: { OurTeam, Button },
 };
 </script>
 <style scoped>
