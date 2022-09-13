@@ -5,17 +5,17 @@
     <div class="md:relative">
       <div class="md:flex-row flex flex-col px-0 items-center md:px-20">
         <h1
-          class="capitalize text-4xl md:text-6xl font-bold mt-20 text-gray-800 opacity-90"
+          class="capitalize text-4xl md:text-6xl font-bold mt-20 text-gray-800 opacity-90 pl-0"
           id="explore"
         >
           <span class="text-yellow-500 opacity-85"> Explore</span> Your World
         </h1>
       </div>
-      <div class="absolute md:right-24 md:top-16 bottom-0">
+      <div class="absolute md:right-24 md:top-16 bottom-10">
         <img
           src="../assets/images/beach-removebg-preview.png"
           alt="travel-palm-image"
-          class="md:h-96 md:w-96"
+          class="h-96 w-96"
         />
       </div>
     </div>
