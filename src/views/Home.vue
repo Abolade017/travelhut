@@ -11,7 +11,7 @@
           <span class="text-yellow-500 opacity-85"> Explore</span> Your World
         </h1>
       </div>
-      <div class="absolute md:right-24 md:top-16 -bottom-10">
+      <div class="absolute md:right-24 md:top-16 -bottom-20">
         <img
           src="../assets/images/beach-removebg-preview.png"
           alt="travel-palm-image"
@@ -43,7 +43,7 @@
         </modal-box>
       </div>
       <div>
-        <p class="text-lg text-gray-600 md:pt-0 pt-56">what exiest you most?</p>
+        <p class="text-lg text-gray-600 md:pt-0 pt-64">what exiest you most?</p>
       </div>
       <div class="my-24">
         <about-Us>
