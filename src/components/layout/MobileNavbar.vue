@@ -1,5 +1,5 @@
 <template>
-  <div class="md:hidden flex justify-between px-3 pb-96">
+  <div class="md:hidden flex justify-between px-3">
     <div>
       <img
         src="../../assets/images/travelhut-logo-removebg-preview.png"
