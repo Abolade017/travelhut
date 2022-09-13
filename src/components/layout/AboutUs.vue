@@ -14,7 +14,7 @@
         </div>
         <div>
           <p class="">
-            <span class="about text-base md:text-xl font-bold text-yellow-500"> TravelHut</span>,
+            <span class="about text-sm md:text-xl font-bold text-yellow-500"> TravelHut</span>,
             a travelling and touring firm that provides satisfactory <br />
             and comfortable services for you. we make sure that our utmost
             priority is to make <br />
@@ -32,7 +32,7 @@
             autem, nesciunt cum! Doloribus!
           </p>
           <div class="pt-6">
-            <Button  class="bg-yellow-500 text-white font-bold">Read More</Button>
+            <Button  class="bg-yellow-500 text-white font-bold w-24 h-10 rounded-md text-center">Read More</Button>
           </div>
           <!-- <div class=" pt-6">
             <h1 class="font-bold text-lg text-gray-700">Follow us:</h1>

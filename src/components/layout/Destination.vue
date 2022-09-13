@@ -1,5 +1,5 @@
 <template>
-  <div class="md:px-0  px-10 w-full">
+  <div class="md:px-0  px-6 w-full">
     <div class=" py-10 md:py-20">
       <div class="">
         <div class=" mt-0 md:-mt-12 pb-4">

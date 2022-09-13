@@ -1,16 +1,16 @@
 <template>
-  <div class="px-20">
+  <div class="md:px-20 px-6">
     <div class="pt-10 pb-24">
-      <h1 class="text-center text-4xl font-bold text-gray-700">
+      <h1 class="text-center text-xl md:text-4xl font-bold text-gray-700">
         Customer's Review
       </h1>
-      <div class="flex justify-between pt-10">
+      <div class="flex md:flex-row flex-col space-y-6 md:space-y-0 md:justify-between justify-center pt-10">
         <div
-          class=" w-96 rounded-md border border-yellow-500 py-10 px-6"
+          class=" md:w-96 rounded-md border border-yellow-500 py-10 px-6"
           v-for="i in getCustomerReview"
           :key="i.id"
         >
-          <div class="flex space-x-4">
+          <div class="flex space-x-4 flex-shrink-0">
             <div>
               <img
                 src="../../assets/images/tour-manager.jpg"

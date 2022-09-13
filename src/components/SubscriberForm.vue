@@ -2,7 +2,7 @@
   <!-- Begin Mailchimp Signup Form -->
   <div class="bg-yellow-50">
     <h1
-      class=" px-10 text-center text-gray-700 font-bold opacity-90 text-2xl md:text-3xl pt-20 pb-6 md:px-0"
+      class="px-10 text-center text-gray-700 font-bold opacity-90 text-2xl md:text-3xl pt-20 pb-6 md:px-0"
     >
       Subscribe to our Newsletter to get<br />
       useful traveling information.
@@ -12,19 +12,19 @@
       method="post"
       id="mc-embedded-subscribe-form"
       name="mc-embedded-subscribe-form"
-      class="validate pb-20 md:px-0 px-10 "
+      class="validate pb-20 md:px-0 px-10"
       target="_blank"
       novalidate
     >
       <div id="mc_embed_signup_scroll">
-        <div class="mc-field-group">
+        <div class="mc-field-group md:flex-row flex-col flex justify-center">
           <div class="">
             <input
               type="email"
               value=""
               name="EMAIL"
               placeholder="Enter your email"
-              class="required w-full h-16 rounded-md border border-yellow-300 focus:outline-none placeholder-black"
+              class="required w-60 md:w-96 px-6 h-10 md:h-16 rounded-md border border-yellow-300 focus:outline-none placeholder-black"
               id="mce-EMAIL"
               required
             />
@@ -35,7 +35,7 @@
               value="Subscribe"
               name="subscribe"
               id="mc-embedded-subscribe"
-              class="h-12 w-full rounded-md bg-yellow-500 text-white font-bold px-4"
+              class="md:h-12 h-8  md:w-full px-2 rounded-md bg-yellow-500 text-white font-bold md:px-4"
             />
           </div>
         </div>
@@ -46,28 +46,5 @@
 <style scoped>
 form {
   position: relative;
-  display: flex;
-  justify-content: center;
-}
-.mc-field-group {
-  width: 800px;
-}
-#mc-embedded-subscribe {
-  position: absolute;
-  bottom: 88px;
-  right: 21%;
-}
-@media only screen  and(max-width:600px) {
-
-  .mc-field-group{
-    width:240px;
-    height: 20px;
-  }
-  #mc-embedded-subscribe {
-  position: absolute;
-  bottom: 88px;
-  right: 21%;
-}
 }
 </style>
-<!-- -->

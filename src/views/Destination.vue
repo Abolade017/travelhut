@@ -1,22 +1,25 @@
 <template>
-  <div class="bg-gray-200">
-    <div class="px-20">
-        <div class="">
-            <!-- <h1 class="text-3xl font-yellow-500 font-bold text-center">Our Services</h1> -->
-        </div>
-    <!-- <div class="py-20 flex space-x-10">
-        <div>
-
-        </div>
-    </div> -->
-</div>
+  <div class="">
+    <Navbar class="md:block hidden" />
+    <MobileNavbar class="md:hidden block" />
+    <div><DestinationList/></div>
+    <Footer class="md:block hidden" />
+    <div class="pt-20">
+    <MobileFooter class="block md:hidden" />
+  </div>
   </div>
 </template>
 
 <script>
-  import Destination from '../components/layout/Destination.vue';
+  // import Destination from '../components/layout/Destination.vue';
+import Navbar from '../components/layout/Navbar.vue';
+import MobileNavbar from '../components/layout/MobileNavbar.vue';
+import Footer from '../components/layout/Footer.vue';
+import MobileFooter from '../components/layout/MobileFooter.vue';
+// import Destination from '../components/layout/Destination.vue';
+import DestinationList from '../components/DestinationList.vue';
 export default {
-  components:{},
+  components:{ Navbar, MobileNavbar, Footer, MobileFooter,DestinationList },
   data() {
     return {
         services:[

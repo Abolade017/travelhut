@@ -45,7 +45,8 @@
               </svg>
             </div>
             <div class="md:hidden text-sm">
-             {{country.reviewStar/2}}<font-awesome-icon
+              {{ country.reviewStar / 2
+              }}<font-awesome-icon
                 icon="fa-solid fa-star"
                 class="text-yellow-500 text-sm"
               />
@@ -53,12 +54,17 @@
           </div>
         </div>
       </div>
-      <div class="pt-2">
+      <div class="pt-2 flex justify-between px-2">
         <DetailButton
           @show-details="
             this.$router.push({ path: `/destination/${country.id}` })
           "
+          class="md:flex hidden md:h-10 md:w-24 h-8 w-16 md:text-base text-xs md:py-2 md:px-3"
         />
+        <Button
+          class="md:hidden flex bg-yellow-500 text-white md:text-base text-xs text-center md:p-0 p-3 font-bold h-12 w-20 md:w-24 rounded-md hover:opacity-90"
+          >Book now</Button
+        >
       </div>
     </div>
   </div>
@@ -66,9 +72,11 @@
 <script>
 import { mapGetters } from "vuex";
 import DetailButton from "./DetailButton.vue";
+import Button from "./Button.vue";
 export default {
   components: {
     DetailButton,
+    Button,
   },
   props: ["location", "rate"],
   data() {

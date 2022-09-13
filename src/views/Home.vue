@@ -1,64 +1,62 @@
 <template>
   <div>
-    <MobileNavbar/>
-    <div class="home px-4 md:px-20">
-      <NavBar />
-      <div class="md:relative">
-        <div class="md:flex-row flex flex-col px-0 items-center md:px-20">
-          <h1
-            class="capitalize text-4xl md:text-6xl font-bold mt-20 text-gray-800 opacity-90"
-            id="explore"
-          >
-            <span class="text-yellow-500 opacity-85"> Explore</span> Your World
-          </h1>
-        </div>
-        <div class="absolute md:right-24 md:top-16 bottom-0 ">
-          <img
-            src="../assets/images/beach-removebg-preview.png"
-            alt="travel-palm-image"
-            class="md:h-96 md:w-96 "
-          />
-        </div>
+    <MobileNavbar />
+    <NavBar />
+    <div class="md:relative">
+      <div class="md:flex-row flex flex-col px-0 items-center md:px-20">
+        <h1
+          class="capitalize text-4xl md:text-6xl font-bold mt-20 text-gray-800 opacity-90"
+          id="explore"
+        >
+          <span class="text-yellow-500 opacity-85"> Explore</span> Your World
+        </h1>
       </div>
-      <div class=" px-0 md:px-20 md:py-2 -py-1">
-        <p class="text-lg text-gray-900 opacity-80 capitalize font-semibold">
-          A new way of travel <br />
-          experience
-        </p>
-        <div class="md:my-24 my-8">
-          <Button
-            class="bg-yellow-500 text-white font-bold"
-            @join="isModalboxVisible = true"
-            >join now</Button
-          >
-          <modal-box
-            v-show="isModalboxVisible"
-            @close="isModalboxVisible = false"
-          >
-            <template v-slot:body>
-              <SubscriberForm />
-            </template>
-            <template v-slot:footer>
-              <div class="mt-4 absolute bottom-10 left-10 right-10">   
-              </div>
-            </template>
-          </modal-box>
-        </div>
-        <div>
-          <p class="text-lg text-gray-600 md:pt-0 pt-56">what exiest you most?</p>
-        </div>
-        <div class="my-24">
-          <about-Us>
-            <template v-slot:Sports>
-              <!-- <Sports /> -->
-            </template>
-          </about-Us>
-        </div>
+      <div class="absolute md:right-24 md:top-16 bottom-0">
+        <img
+          src="../assets/images/beach-removebg-preview.png"
+          alt="travel-palm-image"
+          class="md:h-96 md:w-96"
+        />
       </div>
     </div>
-    <Services/>
+    <div class="px-0 md:px-20 md:py-2 -py-1">
+      <p class="text-lg text-gray-900 opacity-80 capitalize font-semibold">
+        A new way of travel <br />
+        experience
+      </p>
+      <div class="md:my-24 my-8">
+        <Button
+          class="bg-yellow-500 text-white font-bold w-24 h-8 rounded-md text-center"
+          @join="isModalboxVisible = true"
+          >join now</Button
+        >
+        <modal-box
+          v-show="isModalboxVisible"
+          @close="isModalboxVisible = false"
+        >
+          <template v-slot:body>
+            <SubscriberForm />
+          </template>
+          <template v-slot:footer>
+            <div class="mt-4 absolute bottom-10 left-10 right-10"></div>
+          </template>
+        </modal-box>
+      </div>
+      <div>
+        <p class="text-lg text-gray-600 md:pt-0 pt-56">what exiest you most?</p>
+      </div>
+      <div class="my-24">
+        <about-Us>
+          <template v-slot:Sports>
+            <!-- <Sports /> -->
+          </template>
+        </about-Us>
+      </div>
+    </div>
+
+    <Services />
     <Destination />
-    <SubscriberForm/>
+    <SubscriberForm />
     <CustomersReview />
     <Footer class="hidden md:block" />
     <MobileFooter class="md:hidden block" />
@@ -102,11 +100,11 @@ export default {
       isModalboxVisible: false,
     };
   },
-  methods:{
-    gotoAboutPage(){
-      return this.$router.push({path:'/about'});
-    }
-  }
+  methods: {
+    gotoAboutPage() {
+      return this.$router.push({ path: "/about" });
+    },
+  },
 };
 </script>
 <style scoped>
