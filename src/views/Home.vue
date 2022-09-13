@@ -60,7 +60,8 @@
     <Destination />
     <SubscriberForm/>
     <CustomersReview />
-    <Footer />
+    <Footer class="hidden md:block" />
+    <MobileFooter class="md:hidden block" />
   </div>
 </template>
 
@@ -78,6 +79,7 @@ import ModalBox from "../components/layout/ModalBox.vue";
 import SubscriberForm from "../components/SubscriberForm";
 import Services from "../components/layout/Services";
 import CustomersReview from "../components/layout/CustomersReview.vue";
+import MobileFooter from "../components/layout/MobileFooter.vue";
 export default {
   name: "Home",
   components: {
@@ -93,6 +95,7 @@ export default {
     SubscriberForm,
     Services,
     CustomersReview,
+    MobileFooter,
   },
   data() {
     return {

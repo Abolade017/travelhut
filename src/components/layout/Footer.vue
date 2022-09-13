@@ -21,7 +21,6 @@
             :key="i"
           />
         </router-link>
-        <div v-for="i in travelHut" :key="i.id">{{ i.social }}</div>
       </div>
       <div class="">
         <h1 class="text-xl font-bold text-white explore">Our Services</h1>
