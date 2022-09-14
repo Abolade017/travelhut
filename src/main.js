@@ -6,12 +6,12 @@ import '@/assets/css/tailwind.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { faFacebookF, faInstagram, faTwitter, } from '@fortawesome/free-brands-svg-icons';
-import { faStar, faTicket, faHotel, faCar, faBars} from '@fortawesome/free-solid-svg-icons';
+import { faStar, faTicket, faHotel, faCar, faBars, faLocationDot, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 
 
 
-library.add(faInstagram, faFacebookF, faTwitter, faTwitter, faStar, faTicket, faHotel, faCar, faBars );
+library.add(faInstagram, faFacebookF, faTwitter, faTwitter, faStar, faTicket, faHotel, faCar, faBars, faLocationDot, faEnvelope, faPhone);
 
 
 
