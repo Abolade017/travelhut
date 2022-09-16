@@ -25,21 +25,17 @@
           <p class="">
             <span class="about text-sm md:text-xl font-bold text-yellow-500">
               TravelHut</span
-            >, a travelling and touring firm that provides satisfactory <br />
+            >, a travelling and touring firm that provides satisfactory 
             and comfortable services for you. we make sure that our utmost
-            priority is to make <br />
-            your dream comes through, we give the best, <br />
-            we provide travelling and touring to great cities <br />
-            around the world we offer different sports like <br />
-            kayaking, camping, surfing, traking, and many more <br />
-            to our touring packages based on your preferences <br />
-            we take care of your safety, because its also <br />
-            our priority to make sure that you are safe. <br />
-            Necessitatibus veritatis atque neque maxime voluptatem ratione sit
-            <br />
-            libero porro consequatur nobis vitae eius fuga sequi dolorum facere
-            <br />
-            autem, nesciunt cum! Doloribus!
+            priority is to make
+            your dream comes through, we give the best, 
+            we provide travelling and touring to great cities 
+            around the world we offer different sports like 
+            kayaking, camping, surfing, traking, and many more 
+            to our touring packages based on your preferences 
+            we take care of your safety, because its also 
+            our priority to make sure that you are safe. 
+
           </p>
           <div class="pt-6">
             <Button

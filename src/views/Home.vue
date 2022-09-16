@@ -19,7 +19,7 @@
         />
       </div>
     </div>
-    <div class="px-0 md:px-20 md:py-2 -py-1">
+    <div class="px-20 md:py-2 -py-1">
       <p class="text-lg text-gray-900 opacity-80 capitalize font-semibold">
         A new way of travel <br />
         experience
@@ -43,9 +43,9 @@
         </modal-box>
       </div>
       <div>
-        <p class="text-lg text-gray-600 md:pt-0 pt-80">what exiest you most?</p>
+        <!-- <p class="text-lg text-gray-600 md:pt-0 pt-80">what exiest you most?</p> -->
       </div>
-      <div class="my-24">
+      <div class="my-14">
         <about-Us>
           <template v-slot:Sports>
             <!-- <Sports /> -->

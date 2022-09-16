@@ -28,17 +28,35 @@ export default createStore({
       {id:1, name:'Nwosu Ifeoma', comment:'very cheap and affordable', rate:10},
       {id:1, name:'Omoyeni Kehinde', comment:'highly recommended and stress free', rate:10},
     ],
+    currentLocationId: null,
   },
   getters: {
     countryList(state) {
       return state.countries;
     },
-
     getCustomerReview(state){
       return state.customerReview;
-    }
+    },
+    getCurrentLocationId(state) {
+      return state.currentLocationId;
+    },
+    getCurrentCountry(state, getters) {
+      const locationId = getters.getCurrentLocationId;
+      const countries = state.countries;
+      let currentCountry = {};
+
+      const currentCountryIndex = countries.findIndex((country) => country.id == locationId);
+      if(currentCountryIndex != -1){
+        currentCountry = countries[currentCountryIndex];
+      }
+
+      return currentCountry;
+    },
   },
   mutations: {
+    SET_CURRENT_LOCATION_ID(state, payload){
+      state.currentLocationId = payload;
+    }
   },
   actions: {
   },

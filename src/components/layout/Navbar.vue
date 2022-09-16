@@ -35,6 +35,7 @@
 export default {
   data() {
     return {
+      selectedLink:false,
       isSelected: false,
       navs: [
         { id: 1, name: "home", path: "/" },
@@ -46,6 +47,26 @@ export default {
       ],
     };
   },
+  methods:{
+    selectedLink(link){
+      if (link==='about') {
+        this.selectedLink===!this.selectedLink;
+      }else if(link==='home'){
+        this.selectedLink===!this.selectedLink;
+      }else if(link==='destination'){
+        this.selectedLink===!this.selectedLink;
+      }else if(link==='contact'){
+        this.selectedLink===!this.selectedLink;
+      }else if(link==='services'){
+        this.selectedLink===!this.selectedLink;
+      }else if(link==='pricing'){
+        this.selectedLink===!this.selectedLink;
+      }else{
+        this.selectedLink;
+      }
+
+    }
+  }
 };
 </script>
 <style scoped>
@@ -53,7 +74,13 @@ export default {
 #nav-link {
   font-family: "Noto Serif", serif;
 }
-.active {
+
+.selectedLink:active{
+  border: 1px solid orange;
+  width: 100%;
+  background-color: black;
+   opacity: 0.5;
+}.active {
   background-color: orange;
   border-radius: 6px;
   height: 12px;

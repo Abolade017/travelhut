@@ -3,7 +3,7 @@
     <div class="">
       <Navbar />
       <div>
-        
+        <pre>{{ country }}</pre>
       </div>
       <Footer />
     </div>
@@ -23,6 +23,14 @@ export default {
     //   api_key: "26585d44eef5462f9ad6e3a1fdea5e90",
     //   location: [],
     };
+  },
+  computed: {
+    country(){
+      return this.$store.getters.getCurrentCountry;
+    }
+  },
+  mounted(){
+    this.$store.commit('SET_CURRENT_LOCATION_ID', this.$route.params.id);
   },
   methods: {
     // getLocation() {
