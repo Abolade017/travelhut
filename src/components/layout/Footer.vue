@@ -26,7 +26,7 @@
         <h1 class="text-xl font-bold text-white explore">Our Services</h1>
         <div v-for="i in services" :key="i" class="pt-2">
           <div class="pt-1 text-white capitalize text-lg text">
-            {{ i.text }}
+            <router-link :to="i.path"> {{ i.text }}</router-link>
           </div>
         </div>
       </div>
@@ -34,7 +34,7 @@
         <h1 class="text-xl font-bold text-white explore">About</h1>
         <div v-for="i in about" :key="i" class="pt-2">
           <div class="pt-1 text-white capitalize text-lg text">
-            {{ i.text }}
+            <router-link :to="i.path"> {{ i.text }}</router-link>
           </div>
         </div>
       </div>
@@ -42,7 +42,7 @@
         <h1 class="text-xl font-bold text-white explore">Helps</h1>
         <div v-for="i in helps" :key="i" class="pt-2">
           <div class="pt-1 text-white capitalize text-lg text">
-            {{ i.text }}
+            <router-link :to="i.path"> {{ i.text }}</router-link>
           </div>
         </div>
       </div>
@@ -50,7 +50,7 @@
   </div>
 </template>
 <script>
-  // import { mapState } from 'vuex';
+// import { mapState } from 'vuex';
 export default {
   data() {
     return {
@@ -60,28 +60,28 @@ export default {
       //   { id: 3, text: "fa-brands fa-instagram", path: "" },
       // ],
       about: [
-        { id: 1, text: "our story" },
-        { id: 1, text: "teams" },
-        { id: 1, text: "benefit" },
-        { id: 1, text: "Careers" },
+        { id: 1, text: "our story", path: "/our-story" },
+        { id: 1, text: "teams", path: "/teams" },
+        { id: 1, text: "benefit", path: "/benefit" },
+        { id: 1, text: "Careers", path: "/careers" },
       ],
       services: [
-        { id: 1, text: "travelling" },
-        { id: 1, text: "cab service" },
-        { id: 1, text: "Hotel booking" },
-        { id: 1, text: "ticket booking" },
+        { id: 1, text: "travelling", path: "/destination" },
+        { id: 1, text: "cab service", path: "/cab-service" },
+        { id: 1, text: "Hotel booking", path: "/hotel-booking" },
+        { id: 1, text: "ticket booking", path: "/ticket-booking" },
       ],
       helps: [
-        { id: 1, text: "FAQs" },
-        { id: 1, text: "contact us" },
+        { id: 1, text: "FAQs", path: "/faqs" },
+        { id: 1, text: "contact us", path: "/contact" },
       ],
     };
   },
-  computed:{
-  travelHut(){
-    return this.$store.state.travelHut;
-  }
-  }
+  computed: {
+    travelHut() {
+      return this.$store.state.travelHut;
+    },
+  },
 };
 </script>
 <style scoped>
