@@ -11,7 +11,7 @@
           <span class="text-yellow-500 opacity-85"> Explore</span> Your World
         </h1>
       </div>
-      <div class="absolute md:right-24 md:top-16 bottom-12">
+      <div class="absolute md:right-24 md:top-16 -bottom-24">
         <img
           src="../assets/images/beach-removebg-preview.png"
           alt="travel-palm-image"
@@ -19,7 +19,7 @@
         />
       </div>
     </div>
-    <div class="px-20 md:py-2 -py-1">
+    <div class="md:px-20 pl-14  md:py-2 ">
       <p class="text-lg text-gray-900 opacity-80 capitalize font-semibold">
         A new way of travel <br />
         experience
@@ -45,7 +45,7 @@
       <div>
         <!-- <p class="text-lg text-gray-600 md:pt-0 pt-80">what exiest you most?</p> -->
       </div>
-      <div class="my-14">
+      <div class="md:my-14 mt-96 ">
         <about-Us>
           <template v-slot:Sports>
             <!-- <Sports /> -->

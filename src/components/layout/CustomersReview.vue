@@ -4,7 +4,7 @@
       <h1 class="text-center text-xl md:text-4xl font-bold text-gray-700">
         Customer's Review
       </h1>
-      <div class="flex md:flex-row flex-col space-y-6 md:space-y-0 md:justify-between justify-center pt-10">
+      <div class="flex md:flex-row flex-col space-y-6 md:space-y-0 md:justify-between justify-center md:space-x-10 space-x-0 pt-10">
         <div
           class=" md:w-96 rounded-md border border-yellow-500 py-10 px-6"
           v-for="i in getCustomerReview"

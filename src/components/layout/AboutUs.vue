@@ -1,6 +1,6 @@
 <template>
-  <div class="md:px-0 px-10">
-    <div class="pb-20">
+  <div class="md:px-0 ">
+    <div class="pb-20 ">
       <h1
         class="text-center font-bold text-3xl md:text-4xl pt-6 pb-10 md:pb-20"
       >
@@ -9,7 +9,7 @@
       <div
         class="md:flex-row flex-col flex justify-start md:justify-between md:space-x-24 space-x-0"
       >
-        <div>
+        <div class="md:w-1/3 w-full">
           <h1 class="big-world text-xl md:text-2xl font-bold capitalize pb-6">
             it's a big world out <br />there, go explore
           </h1>
@@ -19,9 +19,9 @@
           </p>
 
           <slot name="Sports"></slot>
-          <OurTeam />
+          <!-- <OurTeam /> -->
         </div>
-        <div>
+        <div class="md:w-2/3 w-full">
           <p class="">
             <span class="about text-sm md:text-xl font-bold text-yellow-500">
               TravelHut</span

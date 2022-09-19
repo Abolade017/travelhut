@@ -64,10 +64,10 @@ export default {
         { id: 1, text: "Careers" },
       ],
       services: [
-        { id: 1, text: "tracking" },
-        { id: 1, text: "kayaking" },
-        { id: 1, text: "surfing" },
-        { id: 1, text: "camping" },
+        { id: 1, text: "travelling" },
+        { id: 1, text: "cab service" },
+        { id: 1, text: "hotel booking" },
+        { id: 1, text: "ticket booking" },
       ],
       helps: [
         { id: 1, text: "FAQs" },
