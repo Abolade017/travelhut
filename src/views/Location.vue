@@ -4,7 +4,7 @@
       <MobileNavbar class="md:hidden block" />
       <Navbar class="md:block hidden" />
       <div>
-        <img :src="country.photo" alt="" />
+        <img :src="country.photo" alt="" class="md:w-full" />
       </div>
       <div class="flex py-10 md:px-20 px-10 space-x-10 md:space-x-20">
         <p class="">{{ country.details }}</p>
@@ -35,7 +35,7 @@
           <div class="text-gray-700 font-bold pt-2">${{ country.price }}</div>
         </div>
       </div>
-      <div class="md:px-20 px-6">
+      <div class="md:px-20 px-10">
         <div class="pt-10 pb-24">
           <h1 class="text-center text-xl md:text-4xl font-bold text-gray-700">
             Customer's Review
