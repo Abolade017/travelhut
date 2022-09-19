@@ -70,4 +70,10 @@ export default {
   background-color: black;
    opacity: 0.5;
 }
+router-link:hover{
+  background-color: black;
+  opacity: 0.5;
+  height: 12px;
+  width: 100%;
+}
 </style>
