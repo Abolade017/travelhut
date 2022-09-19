@@ -5,23 +5,24 @@ export default createStore({
     countries: [
 
       {
-        id: 1, name: 'Newyork', 'photo': require('../assets/images/newyork.avif'), reviewStar: 10, price: 200, details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sequi enim assumenda quidem! Laudantium sequi eveniet voluptas voluptatibus minus deserunt corporis Asperiores adipisci architecto odio debitis itaque assumenda officiis atque'
+        id: 1,
+        review: [{ name: 'adeola', comment: 'very satisfactory', rating: 10 }], name: 'Newyork', 'photo': require('../assets/images/newyork.avif'), reviewStar: 10, price: 200, details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sequi enim assumenda quidem! Laudantium sequi eveniet voluptas voluptatibus minus deserunt corporis Asperiores adipisci architecto odio debitis itaque assumenda officiis atque'
       },
       // {id:1, review:, name:'Newyork', photo:require('../assets/images/usa.avif'), reviewStar:10 },
       {
-        id: 2, name: 'USA', photo: require('../assets/images/united-state.jpg'), reviewStar: 8, price: 250, details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sequi enim assumenda quidem! Laudantium sequi eveniet voluptas voluptatibus minus deserunt corporis Asperiores adipisci architecto odio debitis itaque assumenda officiis atque'
+        id: 2, review: [{ name: 'adeola', comment: 'very satisfactory', rating: 10 }], name: 'USA', photo: require('../assets/images/united-state.jpg'), reviewStar: 8, price: 250, details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sequi enim assumenda quidem! Laudantium sequi eveniet voluptas voluptatibus minus deserunt corporis Asperiores adipisci architecto odio debitis itaque assumenda officiis atque'
       },
       {
-        id: 3, name: 'Paris', photo: require('../assets/images/paris.avif'), reviewStar: 6, price: 220, details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sequi enim assumenda quidem! Laudantium sequi eveniet voluptas voluptatibus minus deserunt corporis Asperiores adipisci architecto odio debitis itaque assumenda officiis atque'
+        id: 3, review: [{ name: 'adeola', comment: 'very satisfactory', rating: 10 }], name: 'Paris', photo: require('../assets/images/paris.avif'), reviewStar: 6, price: 220, details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sequi enim assumenda quidem! Laudantium sequi eveniet voluptas voluptatibus minus deserunt corporis Asperiores adipisci architecto odio debitis itaque assumenda officiis atque'
       },
       {
-        id: 4, name: 'Spain', photo: require('../assets/images/spain.avif'), reviewStar: 6, price: 180, details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sequi enim assumenda quidem! Laudantium sequi eveniet voluptas voluptatibus minus deserunt corporis Asperiores adipisci architecto odio debitis itaque assumenda officiis atque'
+        id: 4, review: [{ name: 'adeola', comment: 'very satisfactory', rating: 10 }], name: 'Spain', photo: require('../assets/images/spain.avif'), reviewStar: 6, price: 180, details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sequi enim assumenda quidem! Laudantium sequi eveniet voluptas voluptatibus minus deserunt corporis Asperiores adipisci architecto odio debitis itaque assumenda officiis atque'
       },
       {
-        id: 5, name: 'Germany', photo: require('../assets/images/germany.avif'), reviewStar: 8, price: 210, details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sequi enim assumenda quidem! Laudantium sequi eveniet voluptas voluptatibus minus deserunt corporis Asperiores adipisci architecto odio debitis itaque assumenda officiis atque'
+        id: 5, review: [{ name: 'adeola', comment: 'very satisfactory', rating: 10 }], name: 'Germany', photo: require('../assets/images/germany.avif'), reviewStar: 8, price: 210, details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sequi enim assumenda quidem! Laudantium sequi eveniet voluptas voluptatibus minus deserunt corporis Asperiores adipisci architecto odio debitis itaque assumenda officiis atque'
       },
       {
-        id: 6, name: 'Italy', photo: require('../assets/images/italy.avif'), reviewStar: 10, price: 200, details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sequi enim assumenda quidem! Laudantium sequi eveniet voluptas voluptatibus minus deserunt corporis Asperiores adipisci architecto odio debitis itaque assumenda officiis atque'
+        id: 6, review: [{ name: 'adeola', comment: 'very satisfactory', rating: 10 }], name: 'Italy', photo: require('../assets/images/italy.avif'), reviewStar: 10, price: 200, details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sequi enim assumenda quidem! Laudantium sequi eveniet voluptas voluptatibus minus deserunt corporis Asperiores adipisci architecto odio debitis itaque assumenda officiis atque'
       }
     ],
     travelHut: [
