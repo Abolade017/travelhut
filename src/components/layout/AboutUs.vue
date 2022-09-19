@@ -1,6 +1,6 @@
 <template>
-  <div class="md:px-0 ">
-    <div class="pb-20 ">
+  <div class="md:px-0 pr-10">
+    <div class="pb-20 md:pt-0 pt-4 ">
       <h1
         class="text-center font-bold text-3xl md:text-4xl pt-6 pb-10 md:pb-20"
       >
@@ -30,8 +30,7 @@
             priority is to make
             your dream comes through, we give the best, 
             we provide travelling and touring to great cities 
-            around the world we offer different sports like 
-            kayaking, camping, surfing, traking, and many more 
+            around the world we offer hotel booking,cab services and ticket booking 
             to our touring packages based on your preferences 
             we take care of your safety, because its also 
             our priority to make sure that you are safe. 
