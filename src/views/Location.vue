@@ -3,8 +3,8 @@
     <div class="">
       <MobileNavbar class="md:hidden block" />
       <Navbar class="md:block hidden" />
-      <div>
-        <img :src="country.photo" alt="" class="md:w-full h-96" />
+      <div class="md:w-full md:h-96">
+        <img :src="country.photo" alt="" class="cover md:h-full" />
       </div>
       <div class="flex py-10 md:px-20 px-10 space-x-10 md:space-x-20">
         <p class="">{{ country.details }}</p>
