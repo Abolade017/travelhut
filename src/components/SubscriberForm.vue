@@ -12,7 +12,7 @@
         method="post"
         id="mc-embedded-subscribe-form"
         name="mc-embedded-subscribe-form"
-        class="validate pb-20 md:px-0 pl-12"
+        class="validate pb-20 md:px-0 pl-14"
         target="_blank"
         novalidate
       >
