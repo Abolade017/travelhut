@@ -11,7 +11,7 @@
           <span class="text-yellow-500 opacity-85"> Explore</span> Your World
         </h1>
       </div>
-      <div class="absolute md:right-24 md:top-16 -bottom-20">
+      <div class="absolute md:right-24 md:top-16 -bottom-12">
         <img
           src="../assets/images/beach-removebg-preview.png"
           alt="travel-palm-image"
