@@ -3,6 +3,7 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 import '@/assets/css/tailwind.css';
+// import firebase from './firebase/index';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { faFacebookF, faInstagram, faTwitter, } from '@fortawesome/free-brands-svg-icons';
@@ -20,5 +21,6 @@ app.use(store);
 app.use(router);
 app.mount('#app');
 app.component('font-awesome-icon', FontAwesomeIcon);
+// app.use(firebase);
 app.config.productionTip = false;
 

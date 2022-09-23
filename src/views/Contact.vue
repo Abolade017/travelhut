@@ -13,7 +13,7 @@
       </div>
       <div class="flex md:space-x-0">
         <div class="md:w-2/3 w-full">
-          <form action="">
+          <form action="" @submit.prevent="addMessage">
             <div class="w-full flex flex-col space-y-10 md:px-20 px-6">
               <div class="">
                 <input
@@ -65,7 +65,7 @@
             </div>
           </form>
         </div>
-        <div class="md:w-1/3 ">
+        <div class="md:w-1/3">
           <img
             src="../assets/images/customer-care.jpg"
             alt="customer-care"
@@ -105,7 +105,6 @@ import MobileNavbar from "../components/layout/MobileNavbar.vue";
 import MobileFooter from "../components/layout/MobileFooter.vue";
 import Footer from "../components/layout/Footer.vue";
 import Button from "../components/Button.vue";
-
 export default {
   components: { Navbar, MobileNavbar, MobileFooter, Footer, Button },
   data() {
@@ -134,7 +133,31 @@ export default {
           text2: "0163773496",
         },
       ],
+      newMessage:'',
     };
+  },
+  methods: {
+    // const addMessage=()=>{
+    //   const newMessage={
+    //     id:'1d1',
+    //     name: this.name.value,
+    //     email: this.email.value,
+    //     message: this.message.value,
+    //     subject: this.subject.value,
+    //   }
+    // }
+    // addMessage() {
+      
+    //   setDoc(doc(db, "messages"), {
+    //     id:'1d1',
+    //     name: this.name.value,
+    //     email: this.email.value,
+    //     message: this.message.value,
+    //     subject: this.subject.value,
+       
+    //   });
+    //   console.log("newMessage");
+    // },
   },
 };
 </script>
